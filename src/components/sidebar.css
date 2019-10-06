@@ -1,0 +1,40 @@
+.menu-list,
+.social-list {
+    list-style-type: none;
+}
+
+.social-list li {
+    float: left;
+    padding: 0;
+    margin: 0.8rem;
+}
+
+.social-list li:first-child{
+  margin-left: 0;
+}
+
+.social-list li a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: none;
+  }
+
+  .social-list li a:hover {
+    opacity: 0.6;
+  }
+
+  .menu-list li a{
+    display: block;
+    box-shadow: none;
+  }
+
+  .menu-list li a:hover {
+    text-decoration: underline;
+  }
+
+  .menu-link-active,
+  .menu-list-active-link {
+    text-decoration: underline;
+  }
+
