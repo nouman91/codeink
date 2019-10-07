@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
 import { rhythm, scale } from "../utils/typography"
+import Layout from "../components/layout";
 
 class PageTemplate extends React.Component {
   render() {
