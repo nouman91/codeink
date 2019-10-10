@@ -13,7 +13,7 @@ body {
     --inlineCode-bg: rgba(255, 229, 100, 0.2);
     --inlineCode-text: #1a1a1a;
     --tag-color:#eee;
-    --box-shadow:black 2px 0px 4px -5px
+    --box-shadow:11px 11px 61px #ddd;
   }
   
   body.dark {
@@ -28,5 +28,5 @@ body {
     --inlineCode-bg: hsl(222, 14%, 25%);
     --inlineCode-text: #e6e6e6;
     --tag-color:dimgrey;
-    --box-shadow:black 2px 0px 4px -4px
+    --box-shadow:11px 11px 61px rgba(0,0,0,.3);
   }

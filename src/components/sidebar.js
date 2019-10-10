@@ -8,7 +8,7 @@ import {
   faGithub,
   faTwitter,
   faInstagram,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { rhythm } from "../utils/typography"
@@ -40,15 +40,7 @@ export default function(props) {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        paddingLeft: rhythm(3),
-        paddingRight: rhythm(3),
-        boxShadow: `var(--box-shadow)`,
-        minWidth: rhythm(14),
-        maxWidth: rhythm(14),
-      }}
-    >
+    <div className="sidebar">
       <div>
         <Image
           fixed={data.avatar.childImageSharp.fixed}
@@ -64,41 +56,48 @@ export default function(props) {
           }}
         />
         <h4>{author}</h4>
-        <p style={{ textAlign: "left", color: "#888" }}>
+        <p style={{ color: "#888" }}>
           A JavaScript enthusiast with 5+ years of experience in React, Graphql,
           Node.js and Express etc.
         </p>
-        <hr/>
+        <hr />
         <nav>
           <ul className="menu-list">
             <li>
-              <Link to={"/"} activeClassName="menu-link-active">Home</Link>
+              <Link to={"/"} activeClassName="menu-link-active">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to={"/about-me"} activeClassName="menu-link-active">About me</Link>
+              <Link to={"/about-me"} activeClassName="menu-link-active">
+                About me
+              </Link>
             </li>
           </ul>
         </nav>
-        <hr style={{marginBottom:0}} />
+        <hr style={{ marginBottom: 0 }} />
         <ul className="social-list">
           <li>
             <a href={`https://github.com/${social.github}`} target="_blank">
-              <FontAwesomeIcon icon={faGithub} size="lg"/>
+              <FontAwesomeIcon icon={faGithub} size="lg" />
             </a>
           </li>
           <li>
-            <a href={`https://www.linkedin.com/in/${social.linkedin}`} target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} size="lg"/>
+            <a
+              href={`https://www.linkedin.com/in/${social.linkedin}`}
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
           </li>
           <li>
             <a href={`https://github.com/${social.twitter}`} target="_blank">
-              <FontAwesomeIcon icon={faTwitter} size="lg"/>
+              <FontAwesomeIcon icon={faTwitter} size="lg" />
             </a>
           </li>
           <li>
             <a href={`https://github.com/${social.instagram}`} target="_blank">
-              <FontAwesomeIcon icon={faInstagram} size="lg"/>
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
           </li>
         </ul>

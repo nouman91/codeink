@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+}
+
+.header-main-small {
+  display: none;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-main {
+    display: none;
+  }
+  .header-main-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.625rem 1.3125rem;
+  }
+  .sidebar {
+    padding: 2.625rem 1.3125rem;
+    box-shadow: none;
+    min-height: 50vh;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .main{
+      margin-left: 0 !important;
+  }
+}

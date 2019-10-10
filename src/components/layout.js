@@ -6,6 +6,8 @@ import { rhythm, scale } from "../utils/typography"
 import Toggle from "./toggle"
 import Sidebar from "./sidebar"
 
+import './layout.css'
+
 const Layout = props => {
   const [theme, setTheme] = React.useState(undefined)
 
@@ -14,7 +16,8 @@ const Layout = props => {
   }, [])
 
   const { location, title, children } = props
-  const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const marginLeft = location.pathname === rootPath || location.pathname === "/about-me" ? rhythm(5.5) : "auto" ;
   let header
 
   if (location.pathname === rootPath) {
@@ -81,21 +84,20 @@ const Layout = props => {
         ]}
       />
       <div
-        style={{
-          display: "flex",
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
+        className="wrapper"
       >
-        <div
-          style={{
-            maxWidth: rhythm(4),
-            height: "90vh",
-            background:
-              "linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1)",
-            // background:
-            //   "-webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(187,187,187,1) 11%,rgba(187,187,187,1) 89%,rgba(255,255,255,0) 100%)",
-          }}
-        ></div>
+        <header className="header-main-small">
+            {header}
+            <Toggle
+              setTheme={theme => {
+                localStorage.setItem("theme", theme)
+                window.__setTheme()
+                setTheme(theme)
+              }}
+              theme={theme || "light"}
+            ></Toggle>
+          </header>
+
         {location.pathname === rootPath || location.pathname === "/about-me" ? (
           <Sidebar />
         ) : (
@@ -104,19 +106,14 @@ const Layout = props => {
 
         <div
           style={{
-            marginLeft: `auto`,
+            marginLeft,
             marginRight: `auto`,
             maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
           }}
+          className="main"
         >
-          <header
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginBottom: "2.625rem",
-            }}
-          >
+          <header className="header-main">
             {header}
             <Toggle
               setTheme={theme => {
