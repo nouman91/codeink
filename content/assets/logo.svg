@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="108px" viewBox="0 0 107 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vector" transform="translate(13.000000, 14.000000)" fill-rule="nonzero">
+            <path d="M64,69 C68.418278,69 72,72.581722 72,77 C72,81.418278 68.418278,85 64,85 L38.3703704,85 C12.7546707,85 -8,64.1752121 -8,38.5 C-8,12.8247879 12.7546707,-8 38.3703704,-8 L63.308642,-8 C67.72692,-8 71.308642,-4.418278 71.308642,0 C71.308642,4.418278 67.72692,8 63.308642,8 L38.3703704,8 C21.6033292,8 8,21.6492864 8,38.5 C8,55.3507136 21.6033292,69 38.3703704,69 L64,69 Z" id="Rectangle" fill="#F96444"></path>
+            <path d="M57.6035156,17.1464844 L57.6035156,17.9902344 M57.6035156,37.8085938 L57.6035156,61.3535156" id="Line" stroke="#F96444" stroke-width="16" stroke-linecap="round" transform="translate(57.603516, 38.750000) rotate(-90.000000) translate(-57.603516, -38.750000) "></path>
+        </g>
+    </g>
+</svg>
