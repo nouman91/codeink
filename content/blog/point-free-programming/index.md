@@ -152,4 +152,7 @@ All the example I have shown you here they are working with either maps or sort 
 ### Note 
 Stop for a moment. Let's make sure we are careful on point free. I am not suggesting that you go overboard in trying to make your code point-free. It is a technique that improves readability when used in moderation. But as with most things in software development, you can definitely about it. It is not worth it If your code gets harder to understand because of the hoops you have to jump through to be point-free. Remember the golden objective of point-free is to improve code readability. So never compromise on that.
 
+### When to go Point Free
+The key thing to look for is if you have a function with parameter(s) that is/are directly passed to an inner function call. In all the preceding examples, 'sort(...)' had the parameters which were passed along to another function call. If we have situations like these we will be able to replace that layer of abstraction with a point-free expression.
+
 Hit me on [Linkedin](https://www.linkedin.com/in/noumanwaheed/) let me know what's your thoughts are on Point Free Programming.
