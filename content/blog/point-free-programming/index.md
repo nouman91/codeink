@@ -1,7 +1,7 @@
 ---
 title: Point Free Programming
 date: "2019-10-10"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+description: Improve code readability.
 layout: "post"
 tags:
   - "Functional Programming"
