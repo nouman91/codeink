@@ -90,12 +90,12 @@ export default function(props) {
             </a>
           </li>
           <li>
-            <a href={`https://github.com/${social.twitter}`} target="_blank">
+            <a href={`https://twitter.com/${social.twitter}`} target="_blank">
               <FontAwesomeIcon icon={faTwitter} size="lg" />
             </a>
           </li>
           <li>
-            <a href={`https://github.com/${social.instagram}`} target="_blank">
+            <a href={`https://www.instagram.com/${social.instagram}`} target="_blank">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
           </li>
