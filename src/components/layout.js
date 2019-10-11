@@ -98,7 +98,7 @@ const Layout = props => {
             ></Toggle>
           </header>
 
-        {location.pathname === rootPath || location.pathname === "/about-me" ? (
+        {location.pathname === rootPath || location.pathname === "/about-me" || location.pathname === "/about-me/" ? (
           <Sidebar />
         ) : (
           <div></div>
