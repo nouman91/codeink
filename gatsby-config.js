@@ -3,7 +3,7 @@ module.exports = {
     title: `CODEINK`,
     author: `Nouman Waheed`,
     description: `A JavaScript/Node.js/React blog by Nouman Waheed`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://thecodeink.com/`,
     social: {
       twitter: `NoumanWaheed`,
       github:`nouman91`,

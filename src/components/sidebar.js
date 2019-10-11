@@ -57,8 +57,7 @@ export default function(props) {
         />
         <h4>{author}</h4>
         <p style={{ color: "#888" }}>
-          A JavaScript enthusiast with 5+ years of experience in React, Graphql,
-          Node.js and Express etc.
+        A JavaScript enthusiast with 5+ years of experience in React, Graphql, Node.js, and Express, etc.
         </p>
         <hr />
         <nav>
