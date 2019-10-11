@@ -105,7 +105,7 @@ In this example, we are sorting our data in ascending by column name. We have tw
 
 Focus on *sort* method. We are getting the sorter we need and passing in the column name on which we want to sort but notice we are not passing sort arguments. They will automatically be passed in. Our *stringSorter* is returning a function which is doing sorting in point free way. Take a moment and let it sink ink. Maybe try copy-pasting this snippet and try playing with it.
 
-Lets now convert this example to the normal way, with points and without closure. While we are at it, lets also get ride of arrow functions. This will make it more understandable and help to compare the two techniques.
+Lets now convert this example to the normal way, with points, and without closure. While we are at it, let's also get rid of arrow functions. This will make it more understandable and help to compare the two techniques.
 
 ```javascript
 function stringSorter (col, a, b) {
@@ -152,4 +152,4 @@ All the example I have shown you here they are working with either maps or sort 
 ### Note 
 Stop for a moment. Let's make sure we are careful on point free. I am not suggesting that you go overboard in trying to make your code point-free. It is a technique that improves readability when used in moderation. But as with most things in software development, you can definitely about it. It is not worth it If your code gets harder to understand because of the hoops you have to jump through to be point-free. Remember the golden objective of point-free is to improve code readability. So never compromise on that.
 
-Hit me on [Linkedin](https://www.linkedin.com/in/noumanwaheed/) and let me know what youre thoughts are on Point Free Programming.
+Hit me on [Linkedin](https://www.linkedin.com/in/noumanwaheed/) let me know what's your thoughts are on Point Free Programming.
