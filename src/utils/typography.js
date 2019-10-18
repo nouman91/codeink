@@ -43,8 +43,8 @@ Wordpress2016.overrideThemeStyles = () => {
 }
 
 delete Wordpress2016.googleFonts
-Wordpress2016.headerFontFamily=["Roboto", "Open Sans", "Serif"];
-Wordpress2016.bodyFontFamily=["Roboto", "Open Sans", "Serif"];
+Wordpress2016.headerFontFamily=["CircularStd", "Roboto", "Open Sans", "Serif"];
+Wordpress2016.bodyFontFamily=["CircularStd", "Open Sans", "Serif"];
 
 const typography = new Typography(Wordpress2016)
 

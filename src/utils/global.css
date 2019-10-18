@@ -4,11 +4,13 @@ body {
   }
   
   body.light {
-    --bg: #ffffff;
+    --bg: #fafafa;
     --header: var(--bl-color);
     --textNormal: #222;
     --textTitle: #222;
-    --textLink: var(--bl-color);
+    --textLink: #222;
+    --navbarLink: #222;
+    --navbarColor:white;
     --hr: hsla(0, 0%, 0%, 0.2);
     --inlineCode-bg: rgba(255, 229, 100, 0.2);
     --inlineCode-text: #1a1a1a;
@@ -24,6 +26,7 @@ body {
     --textNormal: rgba(255, 255, 255, 0.88);
     --textTitle: #ffffff;
     --textLink: var(--bl-color);
+    --navbarLink: #222;
     --hr: hsla(0, 0%, 100%, 0.2);
     --inlineCode-bg: hsl(222, 14%, 25%);
     --inlineCode-text: #e6e6e6;
