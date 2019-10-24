@@ -10,7 +10,6 @@ Some words about my professional life: I graduated from university with a Bachel
 
 ## Passion beyond progamming 
 Even though I love programming and I do a lot of it in my professional life and in my spare, I tressure other things too. I am an avid book reader. I love reading all kinds of books but I am especially fond of noval/fantasy books. Some of my absolute favorite books are:
-
 * The Book Theif by [Markus Zusak](https://www.goodreads.com/book/show/19063.The_Book_Thief)
 * I am the Messanger by [Markus Zusak](https://www.goodreads.com/book/show/19057.I_Am_the_Messenger)
 * To Kill a Mockingbird by [Harper Lee](https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird)
