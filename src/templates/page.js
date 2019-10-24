@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+
 import { rhythm, scale } from "../utils/typography"
 import Layout from "../components/layout";
+import Testimonails from "../components/testimonials";
 
 class PageTemplate extends React.Component {
   render() {
@@ -41,6 +43,10 @@ class PageTemplate extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: page.html }} />
+          <div>
+            <Testimonails />
+          </div>
+          <br />
           {/* <hr
             style={{
               marginBottom: rhythm(1),

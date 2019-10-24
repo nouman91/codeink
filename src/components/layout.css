@@ -27,6 +27,7 @@
   .main-content{
     margin-top: 65px;
     padding: 0.8rem 1rem;
+    max-width: 30rem;
   }
   
 }

@@ -18,9 +18,9 @@ export default function(props) {
           <Link activeClassName="navbar-link-active" className="navbar-item" to={"/"}>
             Blogs
           </Link>
-          <a className="navbar-item" href="https:/">
+          <Link activeClassName="navbar-link-active" className="navbar-item" to={"/contact"}>
             Contact
-          </a>
+          </Link>
           <div className="navbar-settings">
             <div className="navbar-item separater"></div>
             <div className="navbar-item">
