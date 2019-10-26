@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `CODEINK`,
     author: `Nouman Waheed`,
-    description: `A JavaScript/Node.js/React blog by Nouman Waheed`,
+    description: `Personal website and JavaScript/Node.js/React blog by Nouman Waheed`,
     siteUrl: `https://thecodeink.com/`,
     social: {
       twitter: `NoumanWaheed`,
       github:`nouman91`,
       instagram:`the_nouman_w/`,
       linkedin:`noumanwaheed/`,
-      email:"noumanwaheed91@gmail.com"
+      email:`noumanwaheed91@gmail.com`
     },
   },
   plugins: [
