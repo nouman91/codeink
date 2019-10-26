@@ -11,6 +11,9 @@ Wordpress2016.overrideThemeStyles = () => {
     hr: {
       background: "var(--hr)",
     },
+    h1:{
+      fontFamily:"inherit"
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: "none",
     },

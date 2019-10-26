@@ -134,6 +134,7 @@ export default function(props) {
                     marginBottom: 0,
                     minWidth: 50,
                     borderRadius: `100%`,
+                    filter: "grayscale(100%)"
                   }}
                   imgStyle={{
                     borderRadius: `50%`,

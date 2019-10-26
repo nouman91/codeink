@@ -1,36 +1,45 @@
 body {
-    --bl-color: #F96444;
-    background-color: var(--bg);
-  }
-  
-  body.light {
-    --bg: #fafafa;
-    --header: var(--bl-color);
-    --textNormal: #222;
-    --textTitle: #222;
-    --textLink: #222;
-    --navbarLink: #222;
-    --navbarColor:white;
-    --testimonial-light-color:rgba(0,0,0,.6);
-    --hr: hsla(0, 0%, 0%, 0.2);
-    --inlineCode-bg: rgba(255, 229, 100, 0.2);
-    --inlineCode-text: #1a1a1a;
-    --tag-color:#eee;
-    --box-shadow:11px 11px 61px #ddd;
-  }
-  
-  body.dark {
-    -webkit-font-smoothing: antialiased;
-  
-    --bg: #282c35;
-    --header: #ffffff;
-    --textNormal: rgba(255, 255, 255, 0.88);
-    --textTitle: #ffffff;
-    --textLink: var(--bl-color);
-    --navbarLink: #222;
-    --hr: hsla(0, 0%, 100%, 0.2);
-    --inlineCode-bg: hsl(222, 14%, 25%);
-    --inlineCode-text: #e6e6e6;
-    --tag-color:dimgrey;
-    --box-shadow:11px 11px 61px rgba(0,0,0,.3);
-  }
+  --bl-color: #f96444;
+  background-color: var(--bg);
+}
+
+body.light {
+  --bg: #fafafa;
+  --header: var(--bl-color);
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: #222;
+  --navbarLink: #222;
+  --navbarColor: white;
+  --testimonial-light-color: rgba(0, 0, 0, 0.6);
+  --hr: hsla(0, 0%, 0%, 0.2);
+  --inlineCode-bg: rgba(255, 229, 100, 0.2);
+  --inlineCode-text: #1a1a1a;
+  --tag-color: #eee;
+  --navbar-separater:rgba(var(--i1d,38,38,38),1);
+  /* --border: 1px solid #dbdbdb; */
+  --nav-box-shadow: 0 1px 6px -6px black;
+  --testimonial-box-shadow:0 0 1px #e6e6e6;
+
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: rgb(21, 32, 43);
+  --header: #ffffff;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: #ffffff;
+  --textLink: --textNormal;
+  --navbarLink: --textNormal;
+  --navbarColor: rgb(21, 32, 43);;
+  --hr: hsla(0, 0%, 100%, 0.2);
+  --inlineCode-bg: hsl(222, 14%, 25%);
+  --inlineCode-text: #e6e6e6;
+  --tag-color: dimgrey;
+  --border: 1px solid #474957;
+  --navbar-separater:rgba(255, 255, 255, 0.88);
+  --nav-box-shadow:0 3px 6px -6px black;
+  --testimonial-box-shadow:0 0 2px black;
+
+}

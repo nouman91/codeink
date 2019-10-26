@@ -3,8 +3,6 @@ import { Link } from "gatsby"
 import Helmet from "react-helmet"
 
 import { rhythm, scale } from "../utils/typography"
-import Toggle from "./toggle"
-import Sidebar from "./sidebar"
 import Navbar from "./navbar"
 import "./layout.css"
 
@@ -84,7 +82,14 @@ const Layout = props => {
         ]}
       />
       <div style={{ display: "flex" }}>
-        <Navbar />
+        <Navbar
+          setTheme={theme => {
+            localStorage.setItem("theme", theme)
+            window.__setTheme()
+            setTheme(theme)
+          }}
+          theme={theme || "light"}
+        />
         <main className="main-content">{children}</main>
       </div>
     </div>

@@ -8,7 +8,8 @@ module.exports = {
       twitter: `NoumanWaheed`,
       github:`nouman91`,
       instagram:`the_nouman_w/`,
-      linkedin:`noumanwaheed/`
+      linkedin:`noumanwaheed/`,
+      email:"noumanwaheed91@gmail.com"
     },
   },
   plugins: [

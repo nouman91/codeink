@@ -1,6 +1,5 @@
 .navbar {
-    /* box-shadow: 0 0 0 1px rgba(0,0,0,0.2); */
-    border-bottom: 1px solid #dbdbdb;
+    box-shadow: var(--nav-box-shadow);
     width: 100%;
     position: fixed;
     height: 4.5rem;
@@ -39,7 +38,7 @@
 .navbar-menu a {
     text-decoration: none;
     outline: none;
-    color: var(--navbarLink);
+    color: var(--textLink);
     box-shadow: none;
     padding-bottom: 8px;
     border-bottom: 2px solid transparent;
@@ -47,9 +46,8 @@
 }
 
 .separater{
-    background-color: rgba(var(--i1d,38,38,38),1);
+    background-color: var(--navbar-separater);
     height: 35px;
-    /* margin: 0 16px; */
     -webkit-transition: opacity .1s ease-out;
     transition: opacity .1s ease-out;
     width: 1.5px;
@@ -59,12 +57,12 @@
     padding-bottom: 8px;
     border-style: none none solid;
     border-width: 2px;
-    border-color: #000;
+    border-color: var(--navbarLink) 
 }
 
 .navbar-link-active {
     padding-bottom: 8px;
     border-style: none none solid;
     border-width: 2px;
-    border-color: #000 !important;
+    border-color:var(--navbarLink) !important;
 }

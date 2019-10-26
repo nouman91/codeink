@@ -16,7 +16,7 @@ export default function(props) {
             About me
           </Link>
           <Link activeClassName="navbar-link-active" className="navbar-item" to={"/"}>
-            Blogs
+            Blog
           </Link>
           <Link activeClassName="navbar-link-active" className="navbar-item" to={"/contact"}>
             Contact
@@ -24,7 +24,7 @@ export default function(props) {
           <div className="navbar-settings">
             <div className="navbar-item separater"></div>
             <div className="navbar-item">
-              <Toggle className="navbar-item" />
+              <Toggle className="navbar-item" setTheme={props.setTheme} theme={props.theme}/>
             </div>
           </div>
         </div>
