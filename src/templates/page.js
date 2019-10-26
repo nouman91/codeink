@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+
 import { rhythm, scale } from "../utils/typography"
 import Layout from "../components/layout";
+import Testimonails from "../components/testimonials";
 
 class PageTemplate extends React.Component {
   render() {
@@ -19,8 +21,9 @@ class PageTemplate extends React.Component {
             <meta name="description" content={description} />
           </Helmet>
         </div>
+        <h1>About Me</h1>
         <article>
-          <header>
+          {/* <header>
             <h1
               style={{
                 marginTop: rhythm(1),
@@ -39,8 +42,13 @@ class PageTemplate extends React.Component {
             >
               {page.frontmatter.date}
             </p>
-          </header>
+          </header> */}
           <section dangerouslySetInnerHTML={{ __html: page.html }} />
+          <div>
+            <h2>Some More Words About Me</h2>
+            <Testimonails />
+          </div>
+          <br />
           {/* <hr
             style={{
               marginBottom: rhythm(1),

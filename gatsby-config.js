@@ -2,13 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `CODEINK`,
     author: `Nouman Waheed`,
-    description: `A JavaScript/Node.js/React blog by Nouman Waheed`,
+    description: `Personal website and JavaScript/Node.js/React blog by Nouman Waheed`,
     siteUrl: `https://thecodeink.com/`,
     social: {
       twitter: `NoumanWaheed`,
       github:`nouman91`,
       instagram:`the_nouman_w/`,
-      linkedin:`noumanwaheed/`
+      linkedin:`noumanwaheed/`,
+      email:`noumanwaheed91@gmail.com`
     },
   },
   plugins: [
@@ -74,7 +75,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/logo.svg`,
+        icon: `content/assets/fav.png`,
       },
     },
     `gatsby-plugin-offline`,

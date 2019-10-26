@@ -3,10 +3,8 @@ import { Link } from "gatsby"
 import Helmet from "react-helmet"
 
 import { rhythm, scale } from "../utils/typography"
-import Toggle from "./toggle"
-import Sidebar from "./sidebar"
-
-import './layout.css'
+import Navbar from "./navbar"
+import "./layout.css"
 
 const Layout = props => {
   const [theme, setTheme] = React.useState(undefined)
@@ -16,8 +14,11 @@ const Layout = props => {
   }, [])
 
   const { location, title, children } = props
-  const rootPath = `${__PATH_PREFIX__}/`;
-  const marginLeft = location.pathname === rootPath || location.pathname === "/about-me" ? rhythm(5.5) : "auto" ;
+  const rootPath = `${__PATH_PREFIX__}/`
+  const marginLeft =
+    location.pathname === rootPath || location.pathname === "/about-me"
+      ? rhythm(5.5)
+      : "auto"
   let header
 
   if (location.pathname === rootPath) {
@@ -76,63 +77,23 @@ const Layout = props => {
         meta={[
           {
             name: "theme-color",
-            content:
-            theme === "light"
-                ? "#ffa8c5"
-                : "#282c35",
+            content: theme === "light" ? "#ffa8c5" : "#282c35",
           },
         ]}
       />
-      <div
-        className="wrapper"
-      >
-        <header className="header-main-small">
-            {header}
-            <Toggle
-              setTheme={theme => {
-                localStorage.setItem("theme", theme)
-                window.__setTheme()
-                setTheme(theme)
-              }}
-              theme={theme || "light"}
-            ></Toggle>
-          </header>
-
-        {location.pathname === rootPath || location.pathname === "/about-me" || location.pathname === "/about-me/" ? (
-          <Sidebar />
-        ) : (
-          <div></div>
-        )}
-
-        <div
-          style={{
-            marginLeft,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+      <div style={{ display: "flex" }}>
+        <Navbar
+          setTheme={theme => {
+            localStorage.setItem("theme", theme)
+            window.__setTheme()
+            setTheme(theme)
           }}
-          className="main"
-        >
-          <header className="header-main">
-            {header}
-            <Toggle
-              setTheme={theme => {
-                localStorage.setItem("theme", theme)
-                window.__setTheme()
-                setTheme(theme)
-              }}
-              theme={theme || "light"}
-            ></Toggle>
-          </header>
-          <main>{children}</main>
-          <footer>
-          </footer>
-        </div>
+          theme={theme || "light"}
+        />
+        <main className="main-content">{children}</main>
       </div>
     </div>
   )
 }
-
-
 
 export default Layout
