@@ -14,7 +14,7 @@ My personal blog based on Gatsby.js starter blog (https://github.com/gatsbyjs/ga
 
 You can also use at as starter blog. To do that run following command.
 
-`gatsby new my-blog-starter https://github.com/nouman91/codeink.git`
+`gatsby new my-blog-starter https://github.com/nouman91/noumanw.git`
 **Start developing.**
 
     Navigate into your new site’s directory and start it up.

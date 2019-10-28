@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `CODEINK`,
+    title: `Nouman Wahid`,
     author: `Nouman Waheed`,
     description: `Personal website and JavaScript/Node.js/React blog by Nouman Waheed`,
-    siteUrl: `https://thecodeink.com/`,
+    siteUrl: `https://noumanwahid.com/`,
     social: {
       twitter: `NoumanWaheed`,
       github:`nouman91`,
@@ -69,8 +69,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `codeink`,
-        short_name: `codeink`,
+        name: `Nouman Wahid`,
+        short_name: `noumanwahid`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

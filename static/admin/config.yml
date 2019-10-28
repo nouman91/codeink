@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: nouman91/codeink
+  repo: nouman91/noumanw
 media_folder: static/assets
 public_folder: assets
 collections:
