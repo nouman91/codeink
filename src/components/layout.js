@@ -6,6 +6,10 @@ import { rhythm, scale } from "../utils/typography"
 import Navbar from "./navbar"
 import "./layout.css"
 
+export const ThemeContext = React.createContext(
+  localStorage.getItem("theme") || "light"
+)
+
 const Layout = props => {
   const [theme, setTheme] = React.useState(undefined)
 
@@ -65,34 +69,36 @@ const Layout = props => {
   }
 
   return (
-    <div
-      style={{
-        color: "var(--textNormal)",
-        background: "var(--bg)",
-        transition: "color 0.2s ease-out, background 0.2s ease-out",
-        minHeight: "100vh",
-      }}
-    >
-      <Helmet
-        meta={[
-          {
-            name: "theme-color",
-            content: theme === "light" ? "#ffa8c5" : "#282c35",
-          },
-        ]}
-      />
-      <div style={{ display: "flex" }}>
-        <Navbar
-          setTheme={theme => {
-            localStorage.setItem("theme", theme)
-            window.__setTheme()
-            setTheme(theme)
-          }}
-          theme={theme || "light"}
+    <ThemeContext.Provider value={theme}>
+      <div
+        style={{
+          color: "var(--textNormal)",
+          background: "var(--bg)",
+          transition: "color 0.2s ease-out, background 0.2s ease-out",
+          minHeight: "100vh",
+        }}
+      >
+        <Helmet
+          meta={[
+            {
+              name: "theme-color",
+              content: theme === "light" ? "#ffa8c5" : "#282c35",
+            },
+          ]}
         />
-        <main className="main-content">{children}</main>
+        <div style={{ display: "flex" }}>
+          <Navbar
+            setTheme={theme => {
+              localStorage.setItem("theme", theme)
+              window.__setTheme()
+              setTheme(theme)
+            }}
+            theme={theme || "light"}
+          />
+          <main className="main-content">{children}</main>
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   )
 }
 

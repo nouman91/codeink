@@ -1,25 +1,28 @@
 body {
-  --bl-color: #f96444;
+  /* --bl-color: #f96444; */
+  --bl-color:#38b2ac;
   background-color: var(--bg);
 }
 
 body.light {
   --bg: #fafafa;
+  /* --bg:#F7FAFC; */
   --header: var(--bl-color);
   --textNormal: #222;
   --textTitle: #222;
   --textLink: #222;
   --navbarLink: #222;
   --navbarColor: white;
+  --card-outer-background:white;
   --testimonial-light-color: rgba(0, 0, 0, 0.6);
   --hr: hsla(0, 0%, 0%, 0.2);
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
   --inlineCode-text: #1a1a1a;
-  --tag-color: #eee;
+  --tag-color: rgba(51,61,102,.07);
   --navbar-separater:rgba(var(--i1d,38,38,38),1);
   /* --border: 1px solid #dbdbdb; */
   --nav-box-shadow: 0 1px 6px -6px black;
-  --testimonial-box-shadow:0 0 1px #e6e6e6;
+  --testimonial-box-shadow:0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05)
 
 }
 
@@ -32,7 +35,8 @@ body.dark {
   --textTitle: #ffffff;
   --textLink: --textNormal;
   --navbarLink: --textNormal;
-  --navbarColor: rgb(21, 32, 43);;
+  --navbarColor: rgb(21, 32, 43);
+  --card-outer-background:dimgrey;
   --hr: hsla(0, 0%, 100%, 0.2);
   --inlineCode-bg: hsl(222, 14%, 25%);
   --inlineCode-text: #e6e6e6;

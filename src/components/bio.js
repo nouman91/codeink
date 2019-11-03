@@ -11,9 +11,9 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-const Bio = () => {
+export const Avatar = () => {
   const data = useStaticQuery(graphql`
-    query BioQuery {
+    query AvatarQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
@@ -21,6 +21,29 @@ const Bio = () => {
           }
         }
       }
+    }
+  `)
+
+  return (
+    <Image
+      fixed={data.avatar.childImageSharp.fixed}
+      alt=""
+      style={{
+        marginRight: rhythm(1 / 2),
+        marginBottom: 0,
+        minWidth: 50,
+        borderRadius: `100%`,
+      }}
+      imgStyle={{
+        borderRadius: `50%`,
+      }}
+    />
+  )
+}
+
+const Bio = () => {
+  const data = useStaticQuery(graphql`
+    query BioQuery {
       site {
         siteMetadata {
           author
@@ -40,25 +63,13 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-          filter: "grayscale(100%)"
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
+      <Avatar />
       <p>
-        Hi, I am <strong>{author}</strong> Full-Stack developer based in Islamabad.
+        Hi, I am <strong>{author}</strong> Full-Stack developer based in
+        Islamabad.
         {` `}
         <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
-        Connect with me on linkedin
+          Connect with me on linkedin
         </a>
       </p>
     </div>
