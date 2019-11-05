@@ -5,7 +5,9 @@ body {
 }
 
 body.light {
-  --bg: #fafafa;
+  --bg: white;
+  --footer-color:#20232a;
+  /* --bg: #fafafa; */
   /* --bg:#F7FAFC; */
   --header: var(--bl-color);
   --textNormal: #222;

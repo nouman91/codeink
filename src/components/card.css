@@ -1,8 +1,18 @@
-.card-container {
+/* .card-container {
   display: flex;
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
+}
+
+.card-subtitle {
+    color:var(--testimonial-light-color);
+} */
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-subtitle {

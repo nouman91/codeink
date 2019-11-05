@@ -86,16 +86,29 @@ const Layout = props => {
             },
           ]}
         />
-        <div style={{ display: "flex" }}>
-          <Navbar
-            setTheme={theme => {
-              localStorage.setItem("theme", theme)
-              window.__setTheme()
-              setTheme(theme)
+        <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+          <div style={{flex: "1 0 auto"}}>
+            <Navbar
+              setTheme={theme => {
+                localStorage.setItem("theme", theme)
+                window.__setTheme()
+                setTheme(theme)
+              }}
+              theme={theme || "light"}
+            />
+            <main className="main-wrapper">{children}</main>
+          </div>
+          <footer
+            style={{
+              backgroundColor: "var(--footer-color)",
+              width: "100%",
+              flexShrink: 0,
             }}
-            theme={theme || "light"}
-          />
-          <main className="main-content">{children}</main>
+          >
+            <div className="container">
+              <div style={{ padding: "60px" }}> Footer </div>
+            </div>
+          </footer>
         </div>
       </div>
     </ThemeContext.Provider>

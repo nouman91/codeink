@@ -1,28 +1,29 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import React from "react"
+import Helmet from "react-helmet"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout";
-import Testimonails from "../components/testimonials";
+import Layout from "../components/layout"
+import Testimonails from "../components/testimonials"
 
 class PageTemplate extends React.Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
     const page = this.props.data.markdownRemark
     const { title: pageTitle, description: pageDescription } = page.frontmatter
-    const description = pageDescription !== null ? pageDescription : "Nouman Waheed's blog"
+    const description =
+      pageDescription !== null ? pageDescription : "Nouman Waheed's blog"
 
     return (
-      <Layout location={this.props.location} title={title}> 
-        <div>
+      <Layout location={this.props.location} title={title}>
+        <div className="container">
           <Helmet>
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
-        </div>
-        <h1>About Me</h1>
-        <article>
-          {/* <header>
+          <div className="page-template">
+            <h1>About Me</h1>
+            <article>
+              {/* <header>
             <h1
               style={{
                 marginTop: rhythm(1),
@@ -42,13 +43,13 @@ class PageTemplate extends React.Component {
               {page.frontmatter.date}
             </p>
           </header> */}
-          <section dangerouslySetInnerHTML={{ __html: page.html }} />
-          <div>
-            <h2>Some More Words About Me</h2>
-            <Testimonails />
-          </div>
-          <br />
-          {/* <hr
+              <section dangerouslySetInnerHTML={{ __html: page.html }} />
+              <div>
+                <h2>Some More Words About Me</h2>
+                <Testimonails />
+              </div>
+              <br />
+              {/* <hr
             style={{
               marginBottom: rhythm(1),
             }}
@@ -56,7 +57,9 @@ class PageTemplate extends React.Component {
           <footer>
             <Bio />
           </footer> */}
-        </article>
+            </article>
+          </div>
+        </div>
       </Layout>
     )
   }
