@@ -103,6 +103,7 @@ const Layout = props => {
               backgroundColor: "var(--footer-color)",
               width: "100%",
               flexShrink: 0,
+              color:"var(--footer-text)"
             }}
           >
             <div className="container">
