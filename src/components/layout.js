@@ -5,6 +5,7 @@ import Helmet from "react-helmet"
 import { rhythm, scale } from "../utils/typography"
 import Navbar from "./navbar"
 import "./layout.css"
+import { Footer } from "./footer"
 
 export const ThemeContext = React.createContext(
   localStorage.getItem("theme") || "light"
@@ -103,11 +104,12 @@ const Layout = props => {
               backgroundColor: "var(--footer-color)",
               width: "100%",
               flexShrink: 0,
-              color:"var(--footer-text)"
+              color:"var(--footer-text)",
+              borderTop:"var(--footer-border)"
             }}
           >
             <div className="container">
-              <div style={{ padding: "60px" }}> Footer </div>
+              <div style={{paddingTop:"60px", paddingBottom:"60px"}}> <Footer /> </div>
             </div>
           </footer>
         </div>

@@ -1,0 +1,28 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-input {
+  background: #fff;
+  font-size: 15px;
+  padding: 12px;
+  border: 1px solid var(--footer-text);
+  border-radius: 5px;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  transition: border-color 0.3s ease-out;
+  margin-bottom: 1rem;
+}
+
+
+.from-button {
+    color:var(--footer-text);
+    background: transparent;
+    padding:10px;
+    border: 2px solid var(--footer-text);
+    border-radius: 6px;
+    cursor: pointer;   
+    width: 100%; 
+}

@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    flex:row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    list-style-type: none;
+}
+
+.footer-nav a{
+    color: var(--footer-text);
+    opacity: 0.5;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.footer-nav a:hover{
+    opacity: 1;
+}

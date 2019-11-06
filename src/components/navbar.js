@@ -35,13 +35,13 @@ export default function(props) {
           >
             Blog
           </Link>
-          <Link
+          {/* <Link
             activeClassName="navbar-link-active"
             className="navbar-item"
             to={"/contact"}
           >
             Contact
-          </Link>
+          </Link> */}
           <div className="navbar-settings">
             <div className="navbar-item separater"></div>
             <div className="navbar-item">

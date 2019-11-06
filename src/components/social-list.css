@@ -1,15 +1,15 @@
 .social-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-list li {
-  float: left;
-  padding: 0;
-  margin: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
-.social-list li:first-child {
-  margin-left: 0;
+.social-list li:last-child {
+  padding-bottom: 0;
 }
 
 .social-list li a {
@@ -20,5 +20,5 @@
 }
 
 .social-list li a:hover {
-  opacity: 0.6;
+  opacity: 1 !important;
 }
