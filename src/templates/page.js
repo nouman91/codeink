@@ -15,11 +15,11 @@ class PageTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={title}>
+        <Helmet>
+          <title>{`${pageTitle} - ${title}`}</title>
+          <meta name="description" content={description} />
+        </Helmet>
         <div className="container">
-          <Helmet>
-            <title>{`${pageTitle} - ${title}`}</title>
-            <meta name="description" content={description} />
-          </Helmet>
           <div className="page-template">
             <h1>About Me</h1>
             <article>
