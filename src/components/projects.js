@@ -7,6 +7,22 @@ import Tags from "./tags"
 import Card, { CardHeader, CardContent } from "./card"
 import "./projects.css"
 
+const NonStretchedImage = props => {
+  let normalizedProps = props
+  console.log(props)
+  if (props.fluid && props.fluid.presentationWidth) {
+    normalizedProps = {
+      ...props,
+      style: {
+        ...(props.style || {}),
+        maxWidth: props.fluid.presentationWidth,
+      },
+    }
+  }
+
+  return <Image {...normalizedProps} />
+}
+
 export default function(props) {
   const theme = React.useContext(ThemeContext)
 
@@ -14,50 +30,56 @@ export default function(props) {
     query {
       cc: file(absolutePath: { regex: "/cc.png/" }) {
         childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      vl: file(absolutePath: { regex: "/vl.png/" }) {
-        childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      sc: file(absolutePath: { regex: "/sc.png/" }) {
-        childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      pl: file(absolutePath: { regex: "/pl.png/" }) {
-        childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
           }
         }
       }
       eh: file(absolutePath: { regex: "/eh.png/" }) {
         childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
+          }
+        }
+      }
+      vl: file(absolutePath: { regex: "/vl.png/" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
+          }
+        }
+      }
+      sc: file(absolutePath: { regex: "/sc.png/" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
+          }
+        }
+      }
+      pl: file(absolutePath: { regex: "/pl.png/" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
           }
         }
       }
       dt: file(absolutePath: { regex: "/dt.png/" }) {
         childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
           }
         }
       }
     }
   `)
   const color = "var(--project-container-color)"
-
+  console.log(data)
   return (
     <div className="projects-wrapper">
       <div className="projects-cards-wrapper">
@@ -70,7 +92,7 @@ export default function(props) {
             />
             <CardContent classes="projects-card-content">
               <div style={{ marginBottom: "5rem" }}>
-                <p style={{ marginBlockStart: 0 }}>
+                <p style={{ marginBottom: 0 }}>
                   Large scale cloud infrastructure management. Built over three
                   years with a team distributed around different countries. We
                   built this for our client presidio.
@@ -89,9 +111,7 @@ export default function(props) {
                   ]}
                 ></Tags>
               </div>
-              {data.cc && (
-                <Image fixed={data.cc.childImageSharp.fixed} alt={""} />
-              )}
+              {data.cc && <NonStretchedImage {...data.cc.childImageSharp} />}
             </CardContent>
           </Card>
         </a>
@@ -106,7 +126,7 @@ export default function(props) {
             />
             <CardContent classes="projects-card-content">
               <div style={{ marginBottom: "5rem" }}>
-                <p style={{ marginBlockStart: 0 }}>
+                <p style={{ marginBottom: 0 }}>
                   Large scale cloud analysis and reporting application. Built
                   over 2 years with a team distributed around different
                   countries. We built this for our client presidio.
@@ -122,14 +142,18 @@ export default function(props) {
                 ></Tags>
               </div>
               {data.vl && (
-                <Image fixed={data.vl.childImageSharp.fixed} alt={""} />
+                <NonStretchedImage {...data.vl.childImageSharp} />
               )}
             </CardContent>
           </Card>
         </a>
       </div>
       <div className="projects-cards-wrapper">
-        <a href="https://github.com/nouman91/Scoreboard-dev" rel="noreferrer" target="_blank">
+        <a
+          href="https://github.com/nouman91/Scoreboard-dev"
+          rel="noreferrer"
+          target="_blank"
+        >
           <Card classes="projects-card" color={color}>
             <CardHeader
               classes="projects-card-header-content"
@@ -138,7 +162,7 @@ export default function(props) {
             />
             <CardContent classes="projects-card-content">
               <div style={{ marginBottom: "5rem" }}>
-                <p style={{ marginBlockStart: 0 }}>
+                <p style={{ marginBottom: 0 }}>
                   Volleyball scoreboard manager. Capable of organizing matches
                   around differ venues and displaying scores on large screens
                 </p>
@@ -147,7 +171,7 @@ export default function(props) {
                 ></Tags>
               </div>
               {data.sc && (
-                <Image fixed={data.sc.childImageSharp.fixed} alt={""} />
+                <NonStretchedImage {...data.sc.childImageSharp} />
               )}
             </CardContent>
           </Card>
@@ -163,7 +187,7 @@ export default function(props) {
             />
             <CardContent classes="projects-card-content">
               <div style={{ marginBottom: "5rem" }}>
-                <p style={{ marginBlockStart: 0 }}>
+                <p style={{ marginBottom: 0 }}>
                   CRM application for our client Schell Brothers. I lead this
                   project with a team of 12 personals
                 </p>
@@ -172,34 +196,33 @@ export default function(props) {
                 ></Tags>
               </div>
               {data.pl && (
-                <Image fixed={data.pl.childImageSharp.fixed} alt={""} />
+                <NonStretchedImage {...data.pl.childImageSharp} />
               )}
             </CardContent>
           </Card>
         </a>
       </div>
       <div className="projects-cards-wrapper">
-          <Card classes="projects-card" color={color}>
-            <CardHeader
-              classes="projects-card-header-content"
-              title="Data Table"
-              titleClass="projects-card-header projects-item-spacing"
-            />
-            <CardContent classes="projects-card-content">
-              <div style={{ marginBottom: "5rem" }}>
-                <p style={{ marginBlockStart: 0 }}>
-                  Custom data table library. Extensible for displaying any kind
-                  of data with the support of filtration, searching, sorting,
-                  and custom actions. 
-                  *I will publish this on npm soon.
-                </p>
-                <Tags tags={["React.js"]}></Tags>
-              </div>
-              {data.dt && (
-                <Image fixed={data.dt.childImageSharp.fixed} alt={""} />
-              )}
-            </CardContent>
-          </Card>
+        <Card classes="projects-card" color={color}>
+          <CardHeader
+            classes="projects-card-header-content"
+            title="Data Table"
+            titleClass="projects-card-header projects-item-spacing"
+          />
+          <CardContent classes="projects-card-content">
+            <div style={{ marginBottom: "5rem" }}>
+              <p style={{ marginBottom: 0 }}>
+                Custom data table library. Extensible for displaying any kind of
+                data with the support of filtration, searching, sorting, and
+                custom actions. *I will publish this on npm soon.
+              </p>
+              <Tags tags={["React.js"]}></Tags>
+            </div>
+            {data.dt && (
+              <NonStretchedImage {...data.dt.childImageSharp} />
+            )}
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
