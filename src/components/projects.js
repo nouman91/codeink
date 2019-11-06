@@ -9,7 +9,7 @@ import "./projects.css"
 
 const NonStretchedImage = props => {
   let normalizedProps = props
-  console.log(props)
+  
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {
       ...props,
@@ -79,7 +79,7 @@ export default function(props) {
     }
   `)
   const color = "var(--project-container-color)"
-  console.log(data)
+  
   return (
     <div className="projects-wrapper">
       <div className="projects-cards-wrapper">
@@ -91,7 +91,7 @@ export default function(props) {
               titleClass="projects-card-header projects-item-spacing"
             />
             <CardContent classes="projects-card-content">
-              <div style={{ marginBottom: "5rem" }}>
+              <div style={{ marginBottom: "4rem" }}>
                 <p style={{ marginBottom: 0 }}>
                   Large scale cloud infrastructure management. Built over three
                   years with a team distributed around different countries. We
@@ -125,7 +125,7 @@ export default function(props) {
               titleClass="projects-card-header projects-item-spacing"
             />
             <CardContent classes="projects-card-content">
-              <div style={{ marginBottom: "5rem" }}>
+              <div style={{ marginBottom: "2rem" }}>
                 <p style={{ marginBottom: 0 }}>
                   Large scale cloud analysis and reporting application. Built
                   over 2 years with a team distributed around different
@@ -161,7 +161,7 @@ export default function(props) {
               titleClass="projects-card-header projects-item-spacing"
             />
             <CardContent classes="projects-card-content">
-              <div style={{ marginBottom: "5rem" }}>
+              <div style={{ marginBottom: "2rem" }}>
                 <p style={{ marginBottom: 0 }}>
                   Volleyball scoreboard manager. Capable of organizing matches
                   around differ venues and displaying scores on large screens
@@ -186,7 +186,7 @@ export default function(props) {
               titleClass="projects-card-header projects-item-spacing"
             />
             <CardContent classes="projects-card-content">
-              <div style={{ marginBottom: "5rem" }}>
+              <div style={{ marginBottom: "2rem" }}>
                 <p style={{ marginBottom: 0 }}>
                   CRM application for our client Schell Brothers. I lead this
                   project with a team of 12 personals
@@ -210,11 +210,12 @@ export default function(props) {
             titleClass="projects-card-header projects-item-spacing"
           />
           <CardContent classes="projects-card-content">
-            <div style={{ marginBottom: "5rem" }}>
+            <div style={{ marginBottom: "2rem" }}>
               <p style={{ marginBottom: 0 }}>
                 Custom data table library. Extensible for displaying any kind of
                 data with the support of filtration, searching, sorting, and
-                custom actions. *I will publish this on npm soon.
+                custom actions. 
+                *I will publish this on npm soon.
               </p>
               <Tags tags={["React.js"]}></Tags>
             </div>

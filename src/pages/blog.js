@@ -10,7 +10,6 @@ import { formatReadingTime } from "../utils/helpers"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
-    console.log(data);
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
