@@ -15,7 +15,7 @@ const Layout = props => {
   const [theme, setTheme] = React.useState(undefined)
 
   React.useEffect(() => {
-    setTheme(localStorage.getItem("theme"))
+    setTheme(window && window.localStorage && localStorage.getItem("theme")||"light")
   }, [])
 
   const { location, title, children } = props
