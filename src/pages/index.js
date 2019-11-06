@@ -1,40 +1,21 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Sections from "../components/sections";
+import Sections from "../components/sections"
 
-function PageIndex (props){
+function PageIndex(props) {
   const { data } = props
-  const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
-  
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
+
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="Nouman Waheed Full-Stack Developer" />
       <div>
         <Sections />
       </div>
-      {/* <section style={{height:"100vh"}}>
-        <header>
-          <h2>Technicall Skills Set</h2>
-        </header>
-        <p style={{ maxWidth: "30rem" }}>
-          I am a big believer in learning, I am always learning new things and
-          improving my fundamentals. I also believe in change is good and I am
-          always in pursuit of learning new and challenging things.{" "}
-        </p>
-        <Skills />
-      </section>
-      <section style={{height:"100vh"}}>
-        <header>
-          <h2>Blog</h2>
-        </header>
-        <p>I also write blogs to share my expereince.</p>
-        <Skills />
-      </section> */}
     </Layout>
   )
 }
