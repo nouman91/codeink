@@ -8,14 +8,14 @@ import "./layout.css"
 import { Footer } from "./footer"
 
 export const ThemeContext = React.createContext(
-  window && window.localStorage && localStorage.getItem("theme")||"light"
+  typeof window !== 'undefined' && window.localStorage && localStorage.getItem("theme")||"light"
 )
 
 const Layout = props => {
   const [theme, setTheme] = React.useState(undefined)
 
   React.useEffect(() => {
-    setTheme(window && window.localStorage && localStorage.getItem("theme")||"light")
+    setTheme(typeof window !== 'undefined' && window.localStorage && localStorage.getItem("theme")||"light")
   }, [])
 
   const { location, title, children } = props
