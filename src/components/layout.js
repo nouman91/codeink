@@ -8,7 +8,7 @@ import "./layout.css"
 import { Footer } from "./footer"
 
 export const ThemeContext = React.createContext(
-  localStorage.getItem("theme") || "light"
+  window && window.localStorage && localStorage.getItem("theme")||"light"
 )
 
 const Layout = props => {
