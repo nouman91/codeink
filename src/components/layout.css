@@ -59,4 +59,16 @@
     padding: 0.8rem 1rem;
     max-width: 30rem;
   }
+  .skills-wrapper{
+    flex-direction: column;
+  }
+  .section-content-manager{
+    padding:20px !important;
+  }
+  .skills-cards-wrapper{
+    width:100% !important;
+  }
+  .section-highlight h2{
+    font-size: 38px !important;
+  }
 }
