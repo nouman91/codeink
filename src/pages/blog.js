@@ -9,7 +9,7 @@ import { formatReadingTime } from "../utils/helpers"
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
@@ -21,42 +21,50 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <article key={node.fields.slug}>
-                <header>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                      {title}
-                    </Link>
-                  </h3>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      padding: "0.3rem",
-                      paddingLeft: 0,
-                    }}
-                  >
-                    {" "}
-                    <small>
-                      {node.frontmatter.date}
-                      {` • ${formatReadingTime(node.timeToRead)}`}
-                    </small>
-                    <Tags tags={node.frontmatter.tags || []}></Tags>
-                  </div>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
-              </article>
+              <div
+                className="blog-post"
+              >
+                <div style={{ boxShadow:"var(--testimonial-box-shadow)" }}>
+                <Link style={{ boxShadow:"var(--testimonial-box-shadow)" }} to={node.fields.slug}>
+                  <article key={node.fields.slug} style={{ padding: "20px" }}>
+                    <header>
+                      <h3
+                        style={{
+                          marginBottom: rhythm(1 / 4),
+                          marginTop: 0,
+                        }}
+                      >
+                        {title}
+                      </h3>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          padding: "0.3rem",
+                          paddingLeft: 0,
+                        }}
+                      >
+                        {" "}
+                        <small>
+                          {node.frontmatter.date}
+                          {` • ${formatReadingTime(node.timeToRead)}`}
+                        </small>
+                        <Tags tags={node.frontmatter.tags || []}></Tags>
+                      </div>
+                    </header>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: node.frontmatter.description || node.excerpt,
+                        }}
+                        style={{ marginBottom: 0 }}
+                      />
+                    </section>
+                  </article>
+                </Link>
+                </div>
+              </div>
             )
           })}
         </div>

@@ -38,6 +38,15 @@
   max-width: 50rem;
 }
 
+.blog-post {
+  margin-bottom: 30px;
+}
+
+.blog-post:hover {
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+  transform: translateY(-1px);
+}
+
 @media screen and (max-width: 768px) {
   .navbar-inner {
     padding: 0.8rem 1rem;
