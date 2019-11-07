@@ -49,7 +49,7 @@ export default function(props) {
                 marginRight: "auto",
               }}
             ></div>
-            <p style={{ fontWeight: 600 }}>
+            <p style={{ fontSize: "28px"}}>
               "Nouman is simply put, a rock star! He is a consummate software
               professional with a personable disposition."
             </p>
