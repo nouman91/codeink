@@ -8,7 +8,7 @@
   background: #fff;
   font-size: 15px;
   padding: 12px;
-  border: 1px solid var(--footer-text);
+  border: 1px solid rgba(255, 255, 255, 0.88);
   border-radius: 5px;
   flex: 1 0 auto;
   line-height: 1.4;
@@ -21,7 +21,7 @@
     color:var(--footer-text);
     background: transparent;
     padding:10px;
-    border: 2px solid var(--footer-text);
+    border: 2px solid rgba(255, 255, 255, 0.88);
     border-radius: 6px;
     cursor: pointer;   
     width: 100%; 
