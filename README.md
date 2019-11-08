@@ -1,8 +1,4 @@
-My personal blog based on Gatsby.js starter blog (https://github.com/gatsbyjs/gatsby-starter-blog). It is inspired by:
-
-* [overreacted](https://github.com/gaearon/overreacted.io)
-* [dribbble about me page](https://dribbble.com/shots/5763894-Portfolio-About-Page)
-* [dribbble home page](https://dribbble.com/shots/2047524-V5-0-Website-Redesign)
+My personal blog based on Gatsby.js starter blog (https://github.com/gatsbyjs/gatsby-starter-blog).
 
 ## Run locally
 
