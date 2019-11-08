@@ -45,8 +45,8 @@ export const Footer = () => {
           color: "var(--footer-text)",
         }}
       >
-        <div style={{ backgroundColor: "#282c34", display:"flex"}}>
-          <div style={{ width: "50%", padding:"20px" }}>
+        <div className="footer-form">
+          <div className="footer-form-content">
             <h2 style={{marginTop:"0"}}>Get in touch</h2>
             <p>Write me an email at address below or use this form</p>
             <a
@@ -56,15 +56,16 @@ export const Footer = () => {
               {data.site.siteMetadata.social.email}
             </a>
           </div>
-          <div style={{ width: "50%", padding:"20px", alignSelf:"flex-start" }}>
+          <div className="footer-form-content">
             <Form />
           </div>
         </div>
       </div>
+      <div style={{ alignSelf: "flex-start" }}>
       <SocialLinks
         social={data.site.siteMetadata.social}
-        style={{ alignSelf: "flex-start" }}
       />
+      </div>
     </div>
   )
 }

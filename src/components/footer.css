@@ -22,3 +22,14 @@
 .footer-nav a:hover{
     opacity: 1;
 }
+
+.footer-form-content{
+    width: 50%;
+    padding:20px;
+    align-self:flex-start;
+}
+
+.footer-form{
+    background-Color: #282c34;
+    display:flex
+}

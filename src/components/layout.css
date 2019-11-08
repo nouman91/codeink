@@ -65,10 +65,32 @@
   .section-content-manager{
     padding:20px !important;
   }
+  .section-content-manager{
+    flex-direction: column;
+  }
+  .section-highlight{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
+  .section-content {
+    width: 100;
+    text-align: center;
+    align-self: center;
+  }
   .skills-cards-wrapper{
     width:100% !important;
   }
   .section-highlight h2{
     font-size: 38px !important;
+  }
+  .footer-form{
+    flex-direction: column;
+  }
+  .footer-form-content{
+    width: 90%;
+  }
+  .tag-list{
+    justify-content: center;
   }
 }

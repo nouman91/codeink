@@ -1,6 +1,5 @@
 .skills-wrapper {
   display: flex;
-  text-align: left;
   flex-wrap: wrap;
   width: 100%;
 }

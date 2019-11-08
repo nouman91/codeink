@@ -4,7 +4,6 @@ import Helmet from "react-helmet"
 
 import { rhythm, scale } from "../utils/typography"
 import Navbar from "./navbar"
-import "./layout.css"
 import { Footer } from "./footer"
 
 export const ThemeContext = React.createContext(
