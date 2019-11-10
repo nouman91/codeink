@@ -4,7 +4,7 @@ layout: "page"
 path: "/about-me"
 ---
 
-Hi, there I am Nouman Waheed. I am an award-winning software engineer from Islamabad. I have over 6 years in JavaScript and related technologies.
+Hi, there I am Nouman Waheed. I am an award-winning software engineer from Islamabad. I have over 6 years of experience in JavaScript and related technologies.
 
 Some words about my professional life: I graduated from university with a Bachelor's in Computer Science. Straight out of university I started working as a  .Net programmer on a large scale project. After a year or so working in .Net/Java, I decided to learn JavaScript. I loved the language and its ecosystem. Shortly after learning it I started working on a large scale project in React/Node.js. Now it has been more than 5 years and I am still working in this language and loving every bit of it.
 
