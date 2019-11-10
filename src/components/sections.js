@@ -16,7 +16,7 @@ export default function(props) {
         <div className="container">
           <header style={{ maxWidth: "30rem" }}>
             <h2>
-              Hey there, my name is Nouman Waheed I am award winning software
+              Hey there, my name is Nouman Waheed I am an award winning software
               engineer from Islamabad.
             </h2>
             <p>
