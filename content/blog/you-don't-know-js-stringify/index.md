@@ -61,7 +61,7 @@ console.log(JSON.stringify(obj, modify));
 //{"name":"Nouman Waheed","age":30,"email":"noumanwaheed91@gmail.com"}
 ```
 
-Picking properties is a daily task for JavaScript developer and we use a number of different libraries to make it work. I believe after reading this you will be able to solve your daily tasks pretty easily.
+Picking properties/updating object properties is a daily task for JavaScript developer and we use a number of different libraries to make it work. I believe after reading this you will be able to solve your daily tasks pretty easily.
 
 There is also another common problem in JavaScript which is copying objects by value. In most cases, you can use Object.Assign but it fails when you have complex objects. Again JSON.stringify helps in copying objects by value when you combine it JSON.parse.
 
