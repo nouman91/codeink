@@ -54,6 +54,12 @@ console.log(JSON.stringify(obj, Object.keys(obj).sort()));
 
 Things get even crazier if you specify a replacer argument as a function. Let's suppose you want to modify something in your resultant string. 
 
+```javascript
+const obj = {name:"Nouman Waheed", age:29, email:"noumanwaheed91@gmail.com"}
+const modify = (key, value) => (key === "age" ? value + 1 : value);
+console.log(JSON.stringify(obj, modify));
+//{"name":"Nouman Waheed","age":30,"email":"noumanwaheed91@gmail.com"}
+```
 
 Picking properties is a daily task for JavaScript developer and we use a number of different libraries to make it work. I believe after reading this you will be able to solve your daily tasks pretty easily.
 
