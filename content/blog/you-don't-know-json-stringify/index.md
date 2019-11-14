@@ -13,13 +13,13 @@ I am writing this blog from utter shock. Recently I learned something amazing wh
 If you have done some JavaScript development you probably have used JSON.stringify(), and if you are a true JavaScript developer like me you probably have never read on this function. You will have code snippet like this:
 
 ```javascript
-const obj = {name:"Nouman Waheed", age:29, address:{city:"islamabad", state:"fedral"}}
+const obj = {name:"Nouman Waheed", age:29, address:{city:"islamabad", state:"federal"}}
 JSON.stringify(obj)
 ```
 or
 
 ```javascript
-const obj = {name:"Nouman Waheed", age:29, address:{city:"islamabad", state:"fedral"}}
+const obj = {name:"Nouman Waheed", age:29, address:{city:"islamabad", state:"federal"}}
 JSON.stringify(obj,null, 4)
 ```
 
