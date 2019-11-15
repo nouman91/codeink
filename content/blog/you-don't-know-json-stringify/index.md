@@ -1,7 +1,7 @@
 ---
 title: You don't know JSON.stringify
 date: "2019-11-13"
-description: You don't know JSON.stringify
+description: Ever heard of the second argument of JSON.stringify?
 layout: "post"
 tags:
   - "JSON"
