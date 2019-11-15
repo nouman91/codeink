@@ -49,7 +49,7 @@ Another aha moment is, it not only picks the properties but also writes them in 
 ```javascript
 const obj = {name:"Nouman Waheed", age:29, email:"noumanwaheed91@gmail.com"}
 console.log(JSON.stringify(obj, Object.keys(obj).sort()));
-//{"name":"Nouman Waheed","email":"noumanwaheed91@gmail.com"}
+//{"age":29,"email":"noumanwaheed91@gmail.com","name":"Nouman Waheed"}
 ```
 
 Things get even crazier if you specify a replacer argument as a function. Let's suppose you want to modify something in your resultant string. 
