@@ -16,8 +16,8 @@ export default function(props) {
         <div className="container">
           <header style={{ maxWidth: "30rem" }}>
             <h2>
-              Hey there, my name is Nouman Waheed I a Full-stack software
-              engineer based in Palno, Texas.
+              Hey there, my name is Nouman Waheed I am a Full-stack software
+              engineer based in Plano, Texas.
             </h2>
             <p>
               I have many years of experience in developing complex web/cloud
