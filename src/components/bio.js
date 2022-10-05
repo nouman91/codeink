@@ -55,7 +55,7 @@ const Bio = () => {
       />
       <p>
         Hi, I am <strong>{author}</strong> Full-Stack developer based in
-        Islamabad.
+        Plano, Texas.
         {` `}
         <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
           Connect with me on linkedin
