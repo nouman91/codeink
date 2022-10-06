@@ -28,7 +28,7 @@ export default function(props) {
 
   const data = useStaticQuery(graphql`
     query {
-      cc: file(absolutePath: { regex: "/cc.png/" }) {
+      cc: file(absolutePath: { regex: "/cc-new.jpg/" }) {
         childImageSharp {
           fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
