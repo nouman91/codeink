@@ -101,7 +101,7 @@ export default function(props) {
           }
         }
       }
-      as: file(absolutePath: { regex: "/placeholder-person.png/" }) {
+      as: file(absolutePath: { regex: "/placeholder-person.jpg/" }) {
         childImageSharp {
           fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
