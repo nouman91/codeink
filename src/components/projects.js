@@ -36,7 +36,7 @@ export default function(props) {
           }
         }
       }
-      eh: file(absolutePath: { regex: "/eh.png/" }) {
+      eh: file(absolutePath: { regex: "/eh.jpg/" }) {
         childImageSharp {
           fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -44,7 +44,7 @@ export default function(props) {
           }
         }
       }
-      vl: file(absolutePath: { regex: "/vl.png/" }) {
+      vl: file(absolutePath: { regex: "/vl.jpg/" }) {
         childImageSharp {
           fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -52,7 +52,7 @@ export default function(props) {
           }
         }
       }
-      sc: file(absolutePath: { regex: "/sc.png/" }) {
+      sc: file(absolutePath: { regex: "/sc.jpg/" }) {
         childImageSharp {
           fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -60,7 +60,7 @@ export default function(props) {
           }
         }
       }
-      pl: file(absolutePath: { regex: "/pl.png/" }) {
+      pl: file(absolutePath: { regex: "/pl.jpg/" }) {
         childImageSharp {
           fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -68,7 +68,7 @@ export default function(props) {
           }
         }
       }
-      dt: file(absolutePath: { regex: "/dt.png/" }) {
+      dt: file(absolutePath: { regex: "/dt.jpg/" }) {
         childImageSharp {
           fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
