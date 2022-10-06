@@ -4,6 +4,15 @@ body {
   background-color: var(--bg);
 }
 
+@font-face {
+  font-family: 'CircularStd';
+  /* font-weight: 100 400;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular'; */
+  src: url(/fonts/CircularStd-Book.woff) format("woff"), url(/fonts/CircularStd-Black.woff) format("woff"), url(/fonts/CircularStd-Medium.woff) format("woff");
+}
+
 body.light {
   --bg: white;
   --footer-color:#20232a;

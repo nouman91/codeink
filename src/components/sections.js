@@ -20,11 +20,8 @@ export default function(props) {
               engineer based in Plano, Texas.
             </h2>
             <p>
-              I have many years of experience in developing complex web/cloud
-              applications. I love building complex applications. I can help you
-              in creating complex architecture, planning projects, selecting best
-              tech stack and building applications. I also write blog posts, but
-              enough about me, how can I help you?
+            I am a Full-stack engineer with almost a decade long experience. Working for more than 9 years in Software development industry. Ability to learn quickly and adapt to the situation. Leading team of engineers and analysts for successful delivery of the projects and communicating with the clients.
+            How can I help you with your next project?
             </p>
             <a href="mailto:noumanwaheed91@gmail.com">
               noumanwaheed91@gmail.com
